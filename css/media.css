@@ -1,0 +1,29 @@
+@media screen and (max-width: 800px) {
+  header .social-icon {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .social-icon i {
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px;
+  }
+  header .animate {
+    display: none;
+  }
+
+  .form .effect h4 {
+    font-size: 50px;
+    color: #333;
+  }
+  .form .effect h4::after {
+    content: "GIT IN TOUCH";
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+}

@@ -1,0 +1,211 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* start navbar */
+.navbar {
+  background-color: #222;
+}
+.navbar .container-fluid a {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 3px;
+}
+.navbar .container-fluid a:hover {
+  color: var(--bs-danger);
+}
+.navbar .container-fluid a.active {
+  color: var(--bs-danger);
+}
+/* end navbar */
+
+/* start header */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/wp2406557.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+header h1 {
+  font-size: 50px;
+}
+header .social-icon {
+  bottom: 15px;
+  left: 15px;
+}
+header .social-icon i {
+  font-size: 25px;
+  margin: 15px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+header .social-icon i:hover {
+  color: var(--bs-danger);
+}
+
+header .animate {
+  width: 25px;
+  height: 42px;
+  border: 1px solid #fff;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .animate::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  animation-name: moveMe;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transition: 0.3s;
+}
+
+@keyframes moveMe {
+  0% {
+    top: 10%;
+  }
+
+  100% {
+    top: 80%;
+  }
+}
+/* end header */
+
+/* start about */
+.about {
+  background-image: url(../images/light_dot.jpg);
+}
+.about .effect h4 {
+  font-size: 80px;
+  color: #eee;
+}
+.about .effect h4::after {
+  content: "ABOUT";
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+}
+/* end about */
+
+/* start portfolio */
+.port .effect h4 {
+  font-size: 80px;
+  color: #eee;
+}
+.port .effect h4::after {
+  content: "PORTFOLIO";
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+}
+.port .layer {
+  position: absolute;
+  top: -92%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  width: 92%;
+  height: 92%;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.port .item:hover .layer {
+  top: 0%;
+}
+
+/* .port .layer h5,
+.port .layer h6,
+.port .layer > div {
+  opacity: 0;
+  transition: 1s;
+} */
+
+/* .port .item:hover .layer h5,
+.layer h6,
+.layer > div {
+  opacity: 1;
+} */
+
+.port .item img {
+  transition: 0.3s;
+}
+.port .item:hover img {
+  filter: blur(2px);
+}
+.port .layer .icon i {
+  margin: 6px;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.port .layer .icon i:hover {
+  color: var(--bs-danger);
+}
+
+/* end portfolio */
+/* start skills */
+.form {
+  background-color: #000;
+}
+.form .effect h4 {
+  font-size: 80px;
+  color: #333;
+}
+.form .effect h4::after {
+  content: "GIT IN TOUCH";
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.form .container form input,
+.form .container form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgb(150, 148, 148);
+  padding: 10px;
+  transition: 0.3s;
+}
+.form .container form textarea {
+  height: 120px;
+}
+.form .container form input:hover,
+.form .container form textarea:hover {
+  border: none;
+  border-bottom: 2px solid tomato;
+}
+
+.form .container form input:last-of-type {
+  width: 200px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 3px;
+  border-bottom: none;
+}
+
+/* end skills */
