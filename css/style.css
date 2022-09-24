@@ -209,3 +209,9 @@ header .animate::after {
 }
 
 /* end skills */
+
+@media screen and (max-width:800px) {
+  .port .effect h4{
+    font-size: 65px;
+  }
+}
